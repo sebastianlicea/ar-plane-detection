@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>12</title>
+<title>13</title>
 <meta charset="utf-8">
 
 <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
@@ -10,12 +10,12 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
       <a-assets>
-                 <a-asset-item id="obj-camping" src="https://sebastianlicea.github.io/ar-plane-detection/model.obj"></a-asset-item>
-                 <a-asset-item id="mtl-camping" src="https://sebastianlicea.github.io/ar-plane-detection/materials.mtl"></a-asset-item>
+                 <a-asset-item id="obj-box" src="https://sebastianlicea.github.io/ar-plane-detection/model.obj"></a-asset-item>
+                 <a-asset-item id="mtl-box" src="https://sebastianlicea.github.io/ar-plane-detection/materials.mtl"></a-asset-item>
             </a-assets>
 	<a-marker preset='custom' type='pattern' url='https://sebastianlicea.github.io/ar-plane-detection/lumi.patt'>
 
-<a-entity obj-model="obj: #obj-camping; mtl: #mtl-camping"></a-entity>
+<a-entity obj-model="obj: #obj-box; mtl: #mtl-box"></a-entity>
 
          </a-marker>
          <a-entity camera></a-entity>
