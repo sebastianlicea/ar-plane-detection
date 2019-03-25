@@ -1,1 +1,1 @@
-# ar-plane-detection
+# AR plane detection
