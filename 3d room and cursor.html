@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>1</title>
+    <script src="https://jujunjun110.github.io/aframe-crawling-cursor/build.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="roomObj" src="https://jujunjun110.github.io/aframe-crawling-cursor/models/office.obj"></a-asset-item>
+            <a-asset-item id="roomMtl" src="https://jujunjun110.github.io/aframe-crawling-cursor/models/office.mtl"></a-asset-item>
+        </a-assets>
+        <a-box position="-3 0.8 -3" rotation="0 180 0" material="color:red">
+            <a-box position="0 1.6 0" rotation="0 30 0" material="color:blue" scale="1.2 1.2 1.2"></a-box>
+        </a-box>
+        <a-entity id="room" obj-model="obj: #roomObj; mtl:#roomMtl" position="0 -1 0"></a-entity>
+        <a-camera raycaster="interval: 10" crawling-cursor></a-camera>
+        <!-- a-cursor geometry="primitive: ring; radius-outer: 0.2; radius-inner: 0.06" material="color: lightblue" opacity="0.7"></a-cursor -->
+        <a-cursor geometry="primitive: box; width: 1; height: 1; depth: 1" material="color: lightblue" opacity="0.7"></a-cursor>
+    </a-scene>
+    
+    <style>
+    .github-corner:hover .octo-arm {animation: octocat-wave 560ms ease-in-out } @keyframes octocat-wave {0%, 100% {transform: rotate(0) } 20%, 60% {transform: rotate(-25deg) } 40%, 80% {transform: rotate(10deg) } } @media (max-width:500px) {.github-corner:hover .octo-arm {animation: none } .github-corner .octo-arm {animation: octocat-wave 560ms ease-in-out } }
+    
+    </body>
+</html>
